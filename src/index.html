@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&family=Lemon&display=swap"
+      rel="stylesheet"
+    />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Ion Icon -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body class="bg-slate-800 font-Kanit">
+    <header class="w-full bg-indigo-500">
+      <div class="text-center text-white text-base py-2">
+        Hello👋🏻
+        <span class="hover:underline cursor-pointer"
+          >Check my latest project</span
+        >
+      </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="sticky top-7 z-50">
+      <div
+        class="backdrop-sepia-1 filter backdrop-blur-sm bg-white/10 w-[85%] lg:w-[50%] md:w-[70%] mt-8 md:mt-5 flex mx-auto rounded-full shadow-xl shadow-indigo-400/10 border-solid border-slate-400"
+      >
+        <ul class="flex justify-around items-center text-white p-2 w-full">
+          <li>
+            <a
+              href="#About"
+              class="text-sm items-center uppercase font-medium hover:text-sky-300 focus:text-sky-500"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#Porto"
+              class="text-sm items-center uppercase font-medium hover:text-sky-300 focus:text-sky-500"
+              >Portofolio</a
+            >
+          </li>
+          <li>
+            <a
+              href="#Certif"
+              class="text-sm items-center uppercase font-medium hover:text-sky-300 focus:text-sky-500"
+              >Certificate</a
+            >
+          </li>
+          <li>
+            <a
+              href="#Contact"
+              class="text-sm items-center uppercase font-medium hover:text-sky-300 focus:text-sky-500"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section
+      class="hero-section mt-16 md:mt-28 lg:h-[60vh] flex flex-col justify-center items-center relative w-fu"
+    >
+      <div
+        class="absolute left-[70px] bottom-6 md:left-[50%] md:-translate-x-1/2 md:-bottom-2 lg:bottom-6"
+      >
+        <img
+          src="assets/tailwind.png"
+          alt=""
+          class="mix-blend-overlay opacity-20 w-52 md:w-72 lg:w-96 h-fit bg-cover bg-fixed bg-center"
+        />
+      </div>
+
+      <div
+        class="absolute right-12 -bottom-3 md:bottom-12 md:right-20 lg:right-48 lg:bottom-11"
+      >
+        <img
+          src="assets/react2.png"
+          alt=""
+          class="mix-blend-color-burn opacity-20 lg:w-40 md:w-32 w-20 h-fit bg-cover bg-fixed bg-center"
+        />
+      </div>
+
+      <div class="absolute left-0 -top-12 -rotate-45 lg:left-28">
+        <img
+          src="assets/javascript.png"
+          alt=""
+          class="opacity-10 w-20 md:w-28 lg:w-40 h-fit bg-cover bg-fixed bg-center"
+        />
+      </div>
+
+      <div class="absolute right-0 -top-12 lg:right-32 lg:-top-20">
+        <img
+          src="assets/postman.jpg"
+          alt=""
+          class="mix-blend-color-burn opacity-20 w-28 md:w-40 lg:w-64 h-fit bg-cover bg-fixed bg-center"
+        />
+      </div>
+      <div
+        class="absolute -bottom-4 left-6 md:left-20 md:bottom-12 lg:left-28 lg:bottom-9"
+      >
+        <img
+          src="assets/ptyhon.png"
+          alt=""
+          class="mix-blend-color-burn opacity-20 w-20 md:w-28 lg:w-40 h-fit bg-cover bg-fixed bg-center"
+        />
+      </div>
+      <div
+        class="absolute top-0 left-0 flex flex-col backdrop-sepia-1 gap-5 filter backdrop-blur-sm bg-white/10 p-2 rounded-r-md"
+      >
+        <div class="group text-2xl">
+          <a href="">
+            <ion-icon
+              name="logo-linkedin"
+              class="group-hover:text-blue-600"
+            ></ion-icon>
+          </a>
+        </div>
+        <div class="group text-2xl">
+          <a href="">
+            <ion-icon
+              name="logo-github"
+              class="group-hover:text-white"
+            ></ion-icon>
+          </a>
+        </div>
+        <div class="group text-2xl">
+          <a href="">
+            <ion-icon
+              name="logo-instagram"
+              class="group-hover:text-indigo-500"
+            ></ion-icon>
+          </a>
+        </div>
+      </div>
+      <div
+        class="flex flex-col md:items-center md:justify-start justify-center"
+      >
+        <h1
+          class="text-5xl md:text-8xl bg-gradient-to-tr text-center from-indigo-300 via-red-300 to-yellow-200 text-transparent bg-clip-text uppercase font-semibold mb-2"
+        >
+          Dzaky Razi
+        </h1>
+
+        <p
+          id="typingtext"
+          class="text-2xl md:text-3xl text-center md:text-left bg-gradient-to-tr from-indigo-300 via-red-300 to-yellow-200 text-transparent bg-clip-text uppercase font-semibold mb-3"
+        >
+          <!-- Initial text to start the animation -->
+        </p>
+        <a
+          href="#"
+          class="bg-indigo-500 text-white py-2 px-4 rounded-lg hover:opacity-95"
+        >
+          My Resume
+        </a>
+        <div class="fixed bottom-3 right-3">
+          <a href="#" id="backtotop" class="bg-white/75 rounded-full p-2 pb-0">
+            <ion-icon name="arrow-up"></ion-icon>
+          </a>
+        </div>
+      </div>
+
+      <div
+        class="bg-indigo-400 rounded-full p-2 pb-0 animate-bounce lg:mt-48 md:mt-20 mt-24"
+      >
+        <ion-icon name="arrow-down" class="text-white"></ion-icon>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="About" class="mt-20 lg:mt-28 mb-24 ">
+      <div class="container mx-auto bg-blue-600">
+        <h1
+          class="text-4xl uppercase bg-gradient-to-tr text-center md:text-6xl from-indigo-300 via-red-300 to-yellow-200 text-transparent bg-clip-text"
+        >
+          About Me
+        </h1>
+        <h2 class="text-lg text-center text-indigo-300/20">Who ?</h2>
+
+        <div class="flex flex-col-reverse md:flex-row md:items-center mt-14">
+          <div class="mt-8 text-white text-start px-6 font-thin md:w-[50%]">
+            <h1 class="text-3xl text-indigo-200 font-medium mb-3 lg:text-6xl">
+              Dzaky Razi?
+            </h1>
+            <p class="text-justify lg:text-2xl">
+              Who is he?
+              <a
+                href="https://www.linkedin.com/in/ahmad-dzaky-67b630248/"
+                class="font-semibold hover:underline"
+                >Ahmad Dzaky Ar Razi</a
+              >
+              is a Active Student with a keen interest in Web Development,
+              aspiring to become a <strong>Frontend Developer.</strong>
+            </p>
+            <br />
+            <p class="text-justify lg:text-2xl">
+              My passion for this field is driven by a strong desire to learn
+              and create meaningful and visually appealing user interfaces. With
+              a solid foundation in web technologies and a good sense of
+              creativity, I am dedicated to pushing my boundaries and
+              contributing my best to the ever-evolving world of Frontend
+              Development. I am committed to working hard and embracing
+              challenges as opportunities for growth. Let's embark on this
+              exciting journey of innovation and creativity together!
+            </p>
+          </div>
+
+          <div 
+            class="flex flex-col lg:items-end lg:mr-5 items-center w-full md:w-[50%] "
+          >
+            <div  
+              class="rounded-full w-[60%] h-auto lg:flex lg:items-center lg:pb-11"
+            >
+              <img 
+                src="assets/Me.jpg"
+                alt=""
+                class="w-full h-full bg-center bg-cover rounded-t-full bg-fixed"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portofolio -->
+    <section id="Porto" class="bg-indigo-300">  
+      <div class="container mx-auto py-12">
+        <h1 data-aos="flip-up"
+          class="text-4xl uppercase bg-gradient-to-b text-center md:text-6xl from-black to-indigo-800 text-transparent bg-clip-text"
+        >
+          Portfolio
+        </h1>
+        <h2 data-aos="flip-up"  class="text-lg text-center text-indigo-800/80">Why?</h2>
+        <h2 class="text-base text-center text-white mt-4">
+          Some of my Websites to be considered
+        </h2>
+
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 gap-y-7 px-3 md:px-6 mt-7"
+        >
+          <!-- Card 1 -->
+          <div data-aos="zoom-in-up"
+            class="flex flex-col bg-slate-100 rounded-md p-2 hover:shadow-xl"
+          >
+            <div>
+              <a href="#">
+                <img
+                  src="assets/edulocal.png"
+                  alt="Porto1"
+                  class="hover:blur-[2px] w-fit h-fit"
+                />
+              </a>
+            </div>
+            <div class="p-2 mt-2">
+              <h1 class="text-xl font-semibold">EduLocal</h1>
+              <p class="font-thin text-sm text-justify">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
+                soluta laboriosam rem architecto, magni, repellendus dolor
+                laudantium est quia quidem sequi! Totam numquam asperiores
+                repellendus placeat ipsum atque saepe similique.
+              </p>
+              <div class="mt-5 flex gap-2 items-center">
+                <a
+                  href="https://www.edulocal.com/"
+                  target="_blank"
+                  class="bg-indigo-500 p-2 text-white hover:bg-indigo-600"
+                >
+                  Live View
+                </a>
+                <a href="#" class="border-indigo-500 p-2 hover:underline">
+                  Github
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div data-aos="zoom-in-up"
+            class="flex flex-col bg-slate-100 rounded-md p-2 hover:shadow-xl"
+          >
+            <div>
+              <a href="#">
+                <img
+                  src="assets/edulocal.png"
+                  alt="Porto1"
+                  class="hover:blur-[2px] w-fit h-fit"
+                />
+              </a>
+            </div>
+            <div class="p-2 mt-2">
+              <h1 class="text-xl font-semibold">EduLocal</h1>
+              <p class="font-thin text-sm text-justify">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
+                soluta laboriosam rem architecto, magni, repellendus dolor
+                laudantium est quia quidem sequi! Totam numquam asperiores
+                repellendus placeat ipsum atque saepe similique.
+              </p>
+              <div class="mt-5 flex gap-2 items-center">
+                <a
+                  href="https://www.edulocal.com/"
+                  target="_blank"
+                  class="bg-indigo-500 p-2 text-white hover:bg-indigo-600"
+                >
+                  Live View
+                </a>
+                <a href="#" class="border-indigo-500 p-2 hover:underline">
+                  Github
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div data-aos="zoom-in-up"
+            class="flex flex-col bg-slate-100 rounded-md p-2 hover:shadow-xl"
+          >
+            <div>
+              <a href="#">
+                <img
+                  src="assets/edulocal.png"
+                  alt="Porto1"
+                  class="hover:blur-[2px] w-fit h-fit"
+                />
+              </a>
+            </div>
+            <div class="p-2 mt-2">
+              <h1 class="text-xl font-semibold">EduLocal</h1>
+              <p class="font-thin text-sm text-justify">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
+                soluta laboriosam rem architecto, magni, repellendus dolor
+                laudantium est quia quidem sequi! Totam numquam asperiores
+                repellendus placeat ipsum atque saepe similique.
+              </p>
+              <div class="mt-5 flex gap-2 items-center">
+                <a
+                  href="https://www.edulocal.com/"
+                  target="_blank"
+                  class="bg-indigo-500 p-2 text-white hover:bg-indigo-600"
+                >
+                  Live View
+                </a>
+                <a href="#" class="border-indigo-500 p-2 hover:underline">
+                  Github
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div data-aos="zoom-in-up"
+            class="flex flex-col bg-slate-100 rounded-md p-2 hover:shadow-xl"
+          >
+            <div>
+              <a href="#">
+                <img
+                  src="assets/edulocal.png"
+                  alt="Porto1"
+                  class="hover:blur-[2px] w-fit h-fit"
+                />
+              </a>
+            </div>
+            <div class="p-2 mt-2">
+              <h1 class="text-xl font-semibold">EduLocal</h1>
+              <p class="font-thin text-sm text-justify">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
+                soluta laboriosam rem architecto, magni, repellendus dolor
+                laudantium est quia quidem sequi! Totam numquam asperiores
+                repellendus placeat ipsum atque saepe similique.
+              </p>
+              <div class="mt-5 flex gap-2 items-center">
+                <a
+                  href="https://www.edulocal.com/"
+                  target="_blank"
+                  class="bg-indigo-500 p-2 text-white hover:bg-indigo-600"
+                >
+                  Live View
+                </a>
+                <a href="#" class="border-indigo-500 p-2 hover:underline">
+                  Github
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ceritificate -->
+    <section id="certif"  class="bg-indigo-300 ">
+        <div class="container mx-auto py-12">
+        <h1
+          class="text-4xl uppercase bg-gradient-to-b text-center md:text-6xl from-black to-indigo-800 text-transparent bg-clip-text"
+        >
+          Certificate
+        </h1>
+        <h2 class="text-lg text-center text-indigo-700/70">What?</h2>
+    </section>
+
+    <!-- Contact -->
+     <section id="Contact">
+      <div class="container mx-auto p-9 mb-6 lg:mb-12">
+        <h1
+          class="text-4xl uppercase bg-gradient-to-tr text-center md:text-6xl from-indigo-300 via-red-300 to-yellow-200 text-transparent bg-clip-text"
+        >
+          Contact
+        </h1>
+        <h2 class="text-lg text-center text-indigo-300/20">How ?</h2>
+        <div class="grid grid-cols-12 mt-8">
+          <div
+            class="md:col-span-6 col-span-12 flex flex-col gap-5 md:gap-6 items-center md:justify-center lg:items-start"
+          >
+            <p
+              class="bg-gradient-to-r text-center font-medium text-2xl md:text-4xl lg:text-6xl from-indigo-500 via-red-500 to-yellow-300 bg-clip-text text-transparent"
+            >
+              Let's Get in Touch
+            </p>
+            <div class="flex gap-3 text-white items-center lg:text-2xl">
+              <div class="flex items-center">
+                <ion-icon name="call"></ion-icon>
+              </div>
+              <p>(+62) 877-9478-0139</p>
+            </div>
+            <div class="flex gap-3 text-white items-center lg:text-2xl">
+              <div class="flex items-center">
+                <ion-icon name="mail"></ion-icon>
+              </div>
+              <p>@dzakyrazi@gmail.com</p>
+            </div>
+            <div class="flex gap-5">
+              <div class="group text-2xl">
+                <a href="">
+                  <ion-icon
+                    name="logo-linkedin"
+                    class="group-hover:text-blue-700"
+                  ></ion-icon>
+                </a>
+              </div>
+              <div class="group text-2xl">
+                <a href="">
+                  <ion-icon
+                    name="logo-github"
+                    class="group-hover:text-white"
+                  ></ion-icon>
+                </a>
+              </div>
+              <div class="group text-2xl">
+                <a href="">
+                  <ion-icon
+                    name="logo-instagram"
+                    class="group-hover:text-purple-400"
+                  ></ion-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="md:col-span-6 col-span-12 mt-5 bg-white rounded-md p-5 w-full flex mx-auto"
+          >
+            <form action="" class="flex flex-col items-center w-full gap-5">
+              <input
+                type="text"
+                placeholder="Your Name"
+                class="py-2 px-3 border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border text-base outline-noned"
+              />
+              <input
+                type="email"
+                placeholder="Your Email"
+                class="py-2 px-3 border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border text-base outline-noned"
+              />
+              <input
+                type="number"
+                placeholder="Your Phone"
+                class="py-2 px-3 border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border text-base outline-noned"
+              />
+              <textarea
+                rows="6"
+                placeholder="Your Message"
+                class="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full resize-none rounded border py-3 px-[14px] text-base outline-none"
+              ></textarea>
+              <button
+                type="submit"
+                class="w-full p-3 text-white transition border rounded border-primary bg-indigo-500 hover:bg-opacity-90"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="w-full bg-indigo-100 py-0.5">
+      <h1
+        class="text-xl md:text-2xl  flex justify-center items-center text-center bg-gradient-to-r from-purple-700 via-teal-800 to-indigo-950 text-transparent bg-clip-text uppercase font-semibold mb-2"
+      >
+        &copy; Dzaky Razi 2024
+      </h1>
+    </footer>
+    <script src="main.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
