@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
+    <title>Personal Websites</title>
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,7 +13,7 @@
       rel="stylesheet"
     />
     <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Ion Icon -->
     <script
       type="module"
@@ -27,8 +28,11 @@
     <header class="w-full bg-indigo-500">
       <div class="text-center text-white text-base py-2">
         Hello👋🏻
-        <span class="hover:underline cursor-pointer"
-          >Check my latest project</span
+        <a
+          href="https://air-carft-4dqs.vercel.app/"
+          target="_blank"
+          class="hover:underline cursor-pointer"
+          >Check my latest project</a
         >
       </div>
     </header>
@@ -73,7 +77,7 @@
 
     <!-- Hero -->
     <section
-      class="hero-section mt-16 md:mt-28 lg:h-[60vh] flex flex-col justify-center items-center relative w-fu"
+      class="hero-section mt-16 md:mt-28 lg:h-[60vh] flex flex-col justify-center items-center relative w-full"
     >
       <div
         class="absolute left-[70px] bottom-6 md:left-[50%] md:-translate-x-1/2 md:-bottom-2 lg:bottom-6"
@@ -164,7 +168,7 @@
         </p>
         <a
           href="#"
-          class="bg-indigo-500 text-white py-2 px-4 rounded-lg hover:opacity-95"
+          class="bg-indigo-500 text-white text-center py-2 px-4 rounded-lg hover:opacity-95"
         >
           My Resume
         </a>
@@ -183,8 +187,8 @@
     </section>
 
     <!-- About -->
-    <section id="About" class="mt-20 lg:mt-28 mb-24 ">
-      <div class="container mx-auto bg-blue-600">
+    <section id="About" class="mt-20 lg:mt-28 mb-24">
+      <div class="container mx-auto">
         <h1
           class="text-4xl uppercase bg-gradient-to-tr text-center md:text-6xl from-indigo-300 via-red-300 to-yellow-200 text-transparent bg-clip-text"
         >
@@ -220,13 +224,13 @@
             </p>
           </div>
 
-          <div 
-            class="flex flex-col lg:items-end lg:mr-5 items-center w-full md:w-[50%] "
+          <div
+            class="flex flex-col lg:items-end lg:mr-5 items-center w-full md:w-[50%]"
           >
-            <div  
+            <div
               class="rounded-full w-[60%] h-auto lg:flex lg:items-center lg:pb-11"
             >
-              <img 
+              <img
                 src="assets/Me.jpg"
                 alt=""
                 class="w-full h-full bg-center bg-cover rounded-t-full bg-fixed"
@@ -238,14 +242,17 @@
     </section>
 
     <!-- Portofolio -->
-    <section id="Porto" class="bg-indigo-300">  
+    <section id="Porto" class="bg-indigo-300">
       <div class="container mx-auto py-12">
-        <h1 data-aos="flip-up"
+        <h1
+          data-aos="flip-up"
           class="text-4xl uppercase bg-gradient-to-b text-center md:text-6xl from-black to-indigo-800 text-transparent bg-clip-text"
         >
           Portfolio
         </h1>
-        <h2 data-aos="flip-up"  class="text-lg text-center text-indigo-800/80">Why?</h2>
+        <h2 data-aos="flip-up" class="text-lg text-center text-indigo-800/80">
+          Why?
+        </h2>
         <h2 class="text-base text-center text-white mt-4">
           Some of my Websites to be considered
         </h2>
@@ -254,7 +261,80 @@
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 gap-y-7 px-3 md:px-6 mt-7"
         >
           <!-- Card 1 -->
-          <div data-aos="zoom-in-up"
+          <div
+            data-aos="zoom-in-up"
+            class="flex flex-col bg-slate-100 rounded-md p-2 hover:shadow-xl"
+          >
+            <div>
+              <a href="#">
+                <img
+                  src="assets/edulocal.png"
+                  alt="Porto1"
+                  class="hover:blur-[2px] w-fit h-fit"
+                />
+              </a>
+            </div>
+            <div class="p-2 mt-2">
+              <h1 class="text-xl font-semibold">EduLocal</h1>
+              <p class="font-thin text-sm text-justify">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
+                soluta laboriosam rem architecto, magni, repellendus dolor
+                laudantium est quia quidem sequi! Totam numquam asperiores
+                repellendus placeat ipsum atque saepe similique.
+              </p>
+              <div class="mt-5 flex gap-2 items-center">
+                <a
+                  href="/"
+                  target="_blank"
+                  class="bg-indigo-500 p-2 text-white hover:bg-indigo-600"
+                >
+                  Live View
+                </a>
+                <a href="#" class="border-indigo-500 p-2 hover:underline">
+                  Github
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            data-aos="zoom-in-up"
+            class="flex flex-col bg-slate-100 rounded-md p-2 hover:shadow-xl"
+          >
+            <div>
+              <a href="#">
+                <img
+                  src="assets/Aircarft.png"
+                  alt="Porto2"
+                  class="hover:blur-[2px] w-fit h-fit"
+                />
+              </a>
+            </div>
+            <div class="p-2 mt-2">
+              <h1 class="text-xl font-semibold">Aircarft</h1>
+              <p class="font-thin text-sm text-justify">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
+                soluta laboriosam rem architecto, magni, repellendus dolor
+                laudantium est quia quidem sequi! Totam numquam asperiores
+                repellendus placeat ipsum atque saepe similique.
+              </p>
+              <div class="mt-5 flex gap-2 items-center">
+                <a
+                  href="https://www.edulocal.com/"
+                  target="_blank"
+                  class="bg-indigo-500 p-2 text-white hover:bg-indigo-600"
+                >
+                  Live View
+                </a>
+                <a href="#" class="border-indigo-500 p-2 hover:underline">
+                  Github
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            data-aos="zoom-in-up"
             class="flex flex-col bg-slate-100 rounded-md p-2 hover:shadow-xl"
           >
             <div>
@@ -289,77 +369,8 @@
             </div>
           </div>
 
-          <div data-aos="zoom-in-up"
-            class="flex flex-col bg-slate-100 rounded-md p-2 hover:shadow-xl"
-          >
-            <div>
-              <a href="#">
-                <img
-                  src="assets/edulocal.png"
-                  alt="Porto1"
-                  class="hover:blur-[2px] w-fit h-fit"
-                />
-              </a>
-            </div>
-            <div class="p-2 mt-2">
-              <h1 class="text-xl font-semibold">EduLocal</h1>
-              <p class="font-thin text-sm text-justify">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
-                soluta laboriosam rem architecto, magni, repellendus dolor
-                laudantium est quia quidem sequi! Totam numquam asperiores
-                repellendus placeat ipsum atque saepe similique.
-              </p>
-              <div class="mt-5 flex gap-2 items-center">
-                <a
-                  href="https://www.edulocal.com/"
-                  target="_blank"
-                  class="bg-indigo-500 p-2 text-white hover:bg-indigo-600"
-                >
-                  Live View
-                </a>
-                <a href="#" class="border-indigo-500 p-2 hover:underline">
-                  Github
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div data-aos="zoom-in-up"
-            class="flex flex-col bg-slate-100 rounded-md p-2 hover:shadow-xl"
-          >
-            <div>
-              <a href="#">
-                <img
-                  src="assets/edulocal.png"
-                  alt="Porto1"
-                  class="hover:blur-[2px] w-fit h-fit"
-                />
-              </a>
-            </div>
-            <div class="p-2 mt-2">
-              <h1 class="text-xl font-semibold">EduLocal</h1>
-              <p class="font-thin text-sm text-justify">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
-                soluta laboriosam rem architecto, magni, repellendus dolor
-                laudantium est quia quidem sequi! Totam numquam asperiores
-                repellendus placeat ipsum atque saepe similique.
-              </p>
-              <div class="mt-5 flex gap-2 items-center">
-                <a
-                  href="https://www.edulocal.com/"
-                  target="_blank"
-                  class="bg-indigo-500 p-2 text-white hover:bg-indigo-600"
-                >
-                  Live View
-                </a>
-                <a href="#" class="border-indigo-500 p-2 hover:underline">
-                  Github
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div data-aos="zoom-in-up"
+          <div
+            data-aos="zoom-in-up"
             class="flex flex-col bg-slate-100 rounded-md p-2 hover:shadow-xl"
           >
             <div>
@@ -397,19 +408,8 @@
       </div>
     </section>
 
-    <!-- Ceritificate -->
-    <section id="certif"  class="bg-indigo-300 ">
-        <div class="container mx-auto py-12">
-        <h1
-          class="text-4xl uppercase bg-gradient-to-b text-center md:text-6xl from-black to-indigo-800 text-transparent bg-clip-text"
-        >
-          Certificate
-        </h1>
-        <h2 class="text-lg text-center text-indigo-700/70">What?</h2>
-    </section>
-
     <!-- Contact -->
-     <section id="Contact">
+    <section id="Contact">
       <div class="container mx-auto p-9 mb-6 lg:mb-12">
         <h1
           class="text-4xl uppercase bg-gradient-to-tr text-center md:text-6xl from-indigo-300 via-red-300 to-yellow-200 text-transparent bg-clip-text"
@@ -504,7 +504,7 @@
     <!-- Footer -->
     <footer class="w-full bg-indigo-100 py-0.5">
       <h1
-        class="text-xl md:text-2xl  flex justify-center items-center text-center bg-gradient-to-r from-purple-700 via-teal-800 to-indigo-950 text-transparent bg-clip-text uppercase font-semibold mb-2"
+        class="text-xl md:text-2xl flex justify-center items-center text-center bg-gradient-to-r from-purple-700 via-teal-800 to-indigo-950 text-transparent bg-clip-text uppercase font-semibold mb-2"
       >
         &copy; Dzaky Razi 2024
       </h1>
